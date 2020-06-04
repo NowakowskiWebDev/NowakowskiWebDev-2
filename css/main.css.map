@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "ACIA,UAAU;EACN,WAAW,EAAE,cAAc;EAC3B,GAAG,EAAE,4BAA4B,CAAC,kBAAkB;EACpD,WAAW,EAAE,GAAG;;;AAGpB,UAAU;EACN,WAAW,EAAE,WAAW;EACxB,GAAG,EAAE,yBAAyB,CAAC,kBAAkB;EACjD,WAAW,EAAE,GAAG;;;AAGpB,UAAU;EACN,WAAW,EAAE,QAAQ;EACrB,GAAG,EAAE,gCAAgC,CAAC,kBAAkB;EACxD,WAAW,EAAE,GAAG;;;ACbpB;;;;;;EAME;AGZF,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,QAAQ,CAAC;EACN,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,OAAO;CACtB;;AAED,AAAA,IAAI,CAAC;EAED,SAAS,EAAE,KAAK;CACnB;;AAED,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,UAAU;EACtB,WAAW,EAAE,cAAc;CAC9B",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/abstracts/_fonts.scss",
+        "../sass/abstracts/_mixins.scss",
+        "../sass/abstracts/_variables.scss",
+        "../sass/base/_animations.scss",
+        "../sass/base/_base.scss",
+        "../sass/components/_button.scss",
+        "../sass/components/_form.scss",
+        "../sass/layout/_header.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
