@@ -1,0 +1,43 @@
+.header {
+    background-image: url(../img/header-back-1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    animation: header-background 60s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
+
+    &__text-box {
+        text-align: center;
+        animation: moveInHeader .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+
+    &__h1 {
+        font-family: 'PermanentMarker';
+        font-size: 4.5rem;
+        color: rgba($color-black, .7);
+    }
+
+    &__paragraph {
+        margin: 3rem 2rem 0;
+        padding: 2rem;
+        background-color: rgba($color-white, .5);
+        font-family: 'Lato-Bold';
+    }
+
+    &__compass {
+        margin-left: 3px;
+        font-size: inherit;
+    }
+
+    &__btn {
+        margin-bottom: 7rem;
+        animation: moveInHeader .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}

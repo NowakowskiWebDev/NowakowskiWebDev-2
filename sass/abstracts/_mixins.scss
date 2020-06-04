@@ -4,6 +4,13 @@
     align-items: center;
 }
 
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /*
 MEDIA QUERY
 0 - 599px;      Phone
