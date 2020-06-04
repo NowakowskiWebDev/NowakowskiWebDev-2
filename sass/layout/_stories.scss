@@ -1,0 +1,51 @@
+.stories {
+    height: min-content;
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: 1.2;
+
+
+    &__heading {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        font-family: 'Caveat';
+    }
+
+    .story {
+        &>* {
+            margin-bottom: 1rem;
+        }
+
+        overflow: hidden;
+        margin: 2rem 0;
+        padding: 1rem;
+        background: linear-gradient(20deg, $background-color 30%, #edf2a8);
+
+        &__tertiary {
+            font-size: 1.8rem;
+        }
+
+        &__box {
+            position: relative;
+            height: 100%;
+
+            &-img {
+                height: 100%;
+                width: 20rem;
+
+            }
+
+            &-caption {
+                display: none;
+            }
+        }
+
+        &__text {
+            padding: 1rem;
+            background-color: $color-white;
+            box-shadow: $box-shadow-base;
+            border-radius: 10px;
+        }
+    }
+}

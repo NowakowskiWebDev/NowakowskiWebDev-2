@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    line-height: inherit;
+
 }
 
 html {
@@ -14,6 +16,13 @@ html {
 body {
     box-sizing: border-box;
     font-family: 'Lato-Regular';
+    line-height: 1.6rem;
 }
 
-::selection {}
+h1,
+h2,
+h3 {
+    font-size: inherit;
+}
+
+// ::selection {}
