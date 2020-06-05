@@ -1,0 +1,49 @@
+.shadow-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: 5rem;
+
+    &__heading {
+        text-transform: uppercase;
+        display: inline-block;
+        position: absolute;
+        top: -60%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 1rem 1rem 5rem;
+        width: 70%;
+        z-index: 10;
+        border-radius: 1rem 1rem 0 0;
+        font-weight: 700;
+
+        &--1 {
+            background-color: #919499;
+            background-image: url(../img/proba.png);
+        }
+
+        &--2 {
+            background-color: white;
+            background-image: url(../img/proba.png);
+        }
+
+        &--3 {
+            background-color: #e97770;
+            background-image: url(../img/proba.png);
+        }
+    }
+
+    &__shadow {
+        display: inline-block;
+        width: 70%;
+        margin: 0 auto;
+        height: 25%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        background-color: transparent;
+        transform: translate(-50%, 0);
+        box-shadow: 8px -3px 15px black, -8px -3px 15px black;
+
+    }
+}
