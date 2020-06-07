@@ -12,6 +12,11 @@
         position: relative;
         padding: 1rem 2rem 5rem;
 
+        @media screen and (orientation: landscape) and (max-width: 599px) {
+            font-size: 4rem;
+            padding: 1rem 2rem 6rem;
+        }
+
         &::after {
             content: '';
             display: block;
@@ -68,6 +73,7 @@
 
             background-color: #e97770;
             background-image: url(../img/overlay.png);
+            padding-bottom: 4rem;
         }
 
     }
@@ -80,9 +86,11 @@
         background-color: $color-white;
         border-radius: 5px;
 
+
+
         &-item {
             background-color: rgba($color-white, .8);
-            margin: 1rem auto;
+            margin: 0rem auto;
             padding-bottom: 1rem;
             width: 70%;
 

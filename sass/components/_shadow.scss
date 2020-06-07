@@ -17,6 +17,10 @@
         border-radius: 1rem 1rem 0 0;
         font-weight: 700;
 
+        // @media screen and (orientation: landscape) and (max-width: 599px) {
+        //     padding: 1rem 1rem 6rem;
+        // }
+
         &--1 {
             background-color: #919499;
             background-image: url(../img/overlay.png);
@@ -30,6 +34,7 @@
         &--3 {
             background-color: #e97770;
             background-image: url(../img/overlay.png);
+
         }
     }
 

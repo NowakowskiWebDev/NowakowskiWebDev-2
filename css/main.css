@@ -105,7 +105,6 @@ h3 {
   border-radius: 10rem;
   background-color: #fff;
   display: inline-block;
-  font-size: inherit;
   font-weight: 700;
   color: black;
   position: relative;
@@ -184,6 +183,19 @@ h3 {
           box-shadow: 8px -3px 15px black, -8px -3px 15px black;
 }
 
+.video {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .header {
   background-image: url(../img/header-back-1280.jpg);
   background-position: center;
@@ -226,6 +238,7 @@ h3 {
   padding: 2rem;
   background-color: rgba(255, 255, 255, 0.5);
   font-family: 'Lato-Bold';
+  font-size: inherit;
 }
 
 .header__compass {
@@ -234,9 +247,10 @@ h3 {
 }
 
 .header__btn {
+  font-size: 1.2rem;
   margin-bottom: 7rem;
-  -webkit-animation: moveInHeader .5s ease-out .75s;
-          animation: moveInHeader .5s ease-out .75s;
+  -webkit-animation: moveInHeader .5s ease-out 1s;
+          animation: moveInHeader .5s ease-out 1s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -255,6 +269,12 @@ h3 {
   margin-bottom: 1rem;
   font-size: 3rem;
   font-family: 'Caveat';
+}
+
+@media screen and (orientation: landscape) and (max-width: 599px) {
+  .stories__heading {
+    font-size: 4rem;
+  }
 }
 
 .stories .story {
@@ -294,6 +314,12 @@ h3 {
   border-radius: 10px;
 }
 
+@media screen and (orientation: landscape) and (max-width: 599px) {
+  .stories .story__text {
+    font-size: 1.2rem;
+  }
+}
+
 .tours {
   font-size: 1.6rem;
   text-align: center;
@@ -307,6 +333,13 @@ h3 {
   line-height: 1;
   position: relative;
   padding: 1rem 2rem 5rem;
+}
+
+@media screen and (orientation: landscape) and (max-width: 599px) {
+  .tours__heading {
+    font-size: 4rem;
+    padding: 1rem 2rem 6rem;
+  }
 }
 
 .tours__heading::after {
@@ -363,6 +396,7 @@ h3 {
 .tours__box--3 {
   background-color: #e97770;
   background-image: url(../img/overlay.png);
+  padding-bottom: 4rem;
 }
 
 .tours__lists {
@@ -376,12 +410,40 @@ h3 {
 
 .tours__lists-item {
   background-color: rgba(255, 255, 255, 0.8);
-  margin: 1rem auto;
+  margin: 0rem auto;
   padding-bottom: 1rem;
   width: 70%;
 }
 
 .tours__lists-item:not(:last-child) {
   border-bottom: 1px solid #aaa;
+}
+
+.dream-night__heading, .dream-night__text {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.dream-night {
+  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+  background: url(../img/background-video-640.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 2rem 0;
+  color: #333;
+}
+
+.dream-night__heading {
+  padding: 6rem 3rem 4rem;
+  font-size: 1.8rem;
+}
+
+.dream-night__text {
+  padding: 3rem 3rem 6rem;
+  font-size: 1.7rem;
 }
 /*# sourceMappingURL=main.css.map */

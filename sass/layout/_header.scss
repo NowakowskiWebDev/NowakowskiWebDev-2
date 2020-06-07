@@ -28,6 +28,7 @@
         padding: 2rem;
         background-color: rgba($color-white, .5);
         font-family: 'Lato-Bold';
+        font-size: inherit;
     }
 
     &__compass {
@@ -36,8 +37,9 @@
     }
 
     &__btn {
+        font-size: 1.2rem;
         margin-bottom: 7rem;
-        animation: moveInHeader .5s ease-out .75s;
+        animation: moveInHeader .5s ease-out 1s;
         animation-fill-mode: backwards;
     }
 }

@@ -10,6 +10,10 @@
         margin-bottom: 1rem;
         font-size: 3rem;
         font-family: 'Caveat';
+
+        @media screen and (orientation: landscape) and (max-width: 599px) {
+            font-size: 4rem;
+        }
     }
 
     .story {
@@ -46,6 +50,10 @@
             background-color: $color-white;
             box-shadow: $box-shadow-base;
             border-radius: 10px;
+
+            @media screen and (orientation: landscape) and (max-width: 599px) {
+                font-size: 1.2rem;
+            }
         }
     }
 }
