@@ -1,2 +1,111 @@
 // VIEW 600PX
-@include respond(tab-port) {}
+@include respond(tab-port) {
+
+    // HEADER FOR 600PX
+    .header {
+        &__h1 {
+            font-size: 6rem;
+        }
+
+        &__paragraph {
+            margin: 5rem 2rem 0;
+            font-size: 1.8rem;
+        }
+
+        &__btn {
+            font-size: 1.6rem;
+        }
+    }
+
+    // STORIES FOR 600PX
+    .stories {
+        // height: min-content;
+        padding: 3rem 4rem 2rem;
+        // text-align: center;
+        // font-size: $deafult-font-size;
+        line-height: 1.6;
+
+        &__heading {
+            // margin-bottom: 1rem;
+            font-size: 4.5rem;
+            // font-family: 'Caveat';
+        }
+
+        .story {
+            position: relative;
+            // &>* {
+            //     margin-bottom: 1rem;
+            // }
+
+            // overflow: hidden;
+            margin: 4rem 0;
+            padding: 3rem 5rem 4rem;
+            // background: linear-gradient(20deg, $background-color 30%, #edf2a8);
+
+            &__tertiary {
+                font-size: 2.2rem;
+            }
+
+            &__box {
+                height: 100%;
+
+                &-img {
+                    height: 100%;
+                    width: 40rem;
+                }
+
+                &-caption {
+                    display: block;
+                    position: absolute;
+                    bottom: 2rem;
+                    right: 4rem;
+                    background-color: $color-white;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    box-shadow: $box-shadow-base;
+                    // font-family: 'Lato-Regular';
+                    // font-family: 'Lato-Bold';
+                    // font-family: 'Caveat';
+                    font-family: 'PermanentMarker';
+
+                    &--1 {
+                        &::after {
+                            content: '';
+                            display: inline-block;
+                            position: absolute;
+                            top: -50%;
+                            left: -20%;
+                            background-color: $color-white;
+                            height: 83%;
+                            width: 112%;
+                            z-index: 15;
+                        }
+                    }
+
+                    &--2 {
+                        &::after {
+                            content: '';
+                            display: inline-block;
+                            position: absolute;
+                            top: -50%;
+                            left: -20%;
+                            background-color: $color-white;
+                            // background-color: yellow;
+                            height: 82%;
+                            width: 113%;
+                            z-index: 15;
+                        }
+                    }
+                }
+            }
+
+            &__text {
+                padding: 2rem 2rem 3.7rem;
+                background-color: $color-white;
+                box-shadow: $box-shadow-base;
+                border-radius: 10px;
+
+            }
+        }
+    }
+}

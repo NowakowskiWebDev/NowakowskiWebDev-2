@@ -357,7 +357,6 @@ h3 {
 }
 
 .stories .story__box {
-  position: relative;
   height: 100%;
 }
 
@@ -376,6 +375,12 @@ h3 {
   -webkit-box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+}
+
+@media screen and (orientation: landscape) and (max-width: 599px) {
+  .stories .story__text {
+    font-size: 1.5rem;
+  }
 }
 
 .tours {
@@ -599,5 +604,81 @@ h3 {
 .footer__paragraph {
   font-size: 1.8rem;
   color: #fff;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .header__h1 {
+    font-size: 6rem;
+  }
+  .header__paragraph {
+    margin: 5rem 2rem 0;
+    font-size: 1.8rem;
+  }
+  .header__btn {
+    font-size: 1.6rem;
+  }
+  .stories {
+    padding: 3rem 4rem 2rem;
+    line-height: 1.6;
+  }
+  .stories__heading {
+    font-size: 4.5rem;
+  }
+  .stories .story {
+    position: relative;
+    margin: 4rem 0;
+    padding: 3rem 5rem 4rem;
+  }
+  .stories .story__tertiary {
+    font-size: 2.2rem;
+  }
+  .stories .story__box {
+    height: 100%;
+  }
+  .stories .story__box-img {
+    height: 100%;
+    width: 40rem;
+  }
+  .stories .story__box-caption {
+    display: block;
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    font-family: 'PermanentMarker';
+  }
+  .stories .story__box-caption--1::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    background-color: #fff;
+    height: 83%;
+    width: 112%;
+    z-index: 15;
+  }
+  .stories .story__box-caption--2::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    background-color: #fff;
+    height: 82%;
+    width: 113%;
+    z-index: 15;
+  }
+  .stories .story__text {
+    padding: 2rem 2rem 3.7rem;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
