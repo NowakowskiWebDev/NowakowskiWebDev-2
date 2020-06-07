@@ -13,7 +13,7 @@
     text-align: center;
     font-size: $deafult-font-size;
     margin: 2rem 0;
-    color: #333;
+    color: $color-grey;
 
 
     &__heading {
@@ -26,8 +26,5 @@
         padding: 3rem 3rem 6rem;
         font-size: 1.7rem;
         @extend %font-basic;
-        // @media screen and (orientation: landscape) and (max-width: 599px) {
-        //     font-size: 1.5rem;
-        // }
     }
 }

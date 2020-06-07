@@ -1,0 +1,50 @@
+.form {
+    text-align: left;
+    padding-bottom: 0rem;
+
+    &__group {
+        padding: 1rem 2rem;
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: .5rem;
+    }
+
+
+
+    &__input {
+        border: none;
+        display: block;
+        padding: .8rem;
+        border-radius: 5px;
+        border: transparent 2px solid;
+
+        &:focus {
+            border: $color-grey 2px solid;
+            outline: none;
+        }
+    }
+
+
+
+    &__textarea {
+        display: block;
+        padding: 1rem;
+        border-radius: 5px;
+        border: transparent 2px solid;
+
+
+        &:focus {
+            outline: none;
+            border: $color-grey 2px solid;
+        }
+    }
+
+    &__btn {
+        display: block;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        margin: 1rem auto 3rem;
+    }
+}
