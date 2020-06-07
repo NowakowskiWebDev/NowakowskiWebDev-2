@@ -24,8 +24,8 @@
 /*
 MEDIA QUERY
 0 - 599px;      Phone
-600 - 900px;    Tablet portrait
-900 - 1200px;   Tablet landscape
+600 - 899px;    Tablet portrait
+900 - 1199px;   Tablet landscape
 1200px +;       Desktop
 */
 @-webkit-keyframes header-background {
@@ -68,6 +68,24 @@ MEDIA QUERY
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes moveBoutRight {
+  0% {
+    left: 10%;
+  }
+  100% {
+    left: 50%;
+  }
+}
+
+@keyframes moveBoutRight {
+  0% {
+    left: 10%;
+  }
+  100% {
+    left: 50%;
   }
 }
 
@@ -360,12 +378,6 @@ h3 {
   border-radius: 10px;
 }
 
-@media screen and (orientation: landscape) and (max-width: 599px) {
-  .stories .story__text {
-    font-size: 1.2rem;
-  }
-}
-
 .tours {
   font-size: 1.6rem;
   text-align: center;
@@ -456,7 +468,7 @@ h3 {
 
 .tours__lists-item {
   background-color: rgba(255, 255, 255, 0.8);
-  margin: 1rem auto;
+  margin: 0rem auto;
   padding-bottom: 1rem;
   width: 70%;
 }
@@ -488,9 +500,14 @@ h3 {
   font-size: 1.8rem;
 }
 
+@media screen and (orientation: landscape) and (max-width: 599px) {
+  .dream-night__heading {
+    font-size: 2.5rem;
+  }
+}
+
 .dream-night__text {
   padding: 3rem 3rem 6rem;
-  font-size: 1.7rem;
 }
 
 .contact {
@@ -521,6 +538,12 @@ h3 {
   color: #fff;
   padding: 1rem;
   font-size: 2.5rem;
+}
+
+@media screen and (orientation: landscape) and (max-width: 599px) {
+  .contact__heading {
+    font-size: 3.5rem;
+  }
 }
 
 .contact__text {
