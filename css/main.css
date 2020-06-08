@@ -959,4 +959,30 @@ h3 {
     max-width: 100%;
   }
 }
+
+@media only screen and (min-width: 75em) {
+  .header {
+    background-image: url(../img/header-back-3671.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .stories .story {
+    padding: 1.5rem 15rem 2rem;
+    -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  }
+  .stories .story__box-caption {
+    bottom: 4rem;
+    right: 17rem;
+    -webkit-box-shadow: 0 0 0.5rem 0.5rem #f9b384;
+            box-shadow: 0 0 0.5rem 0.5rem #f9b384;
+  }
+  .stories .story__box-caption--1::after {
+    display: none;
+  }
+  .stories .story__box-caption--2::after {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */

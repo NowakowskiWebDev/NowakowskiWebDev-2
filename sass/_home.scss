@@ -362,3 +362,46 @@
         }
     }
 }
+
+// VIEW 1200PX+
+@include respond(desktop) {
+
+    // HEDAER FOR 1200PX
+    .header {
+        background-image: url(../img/header-back-3671.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    // STORIES FOR 1200PX
+    .stories {
+
+        .story {
+            padding: 1.5rem 15rem 2rem;
+            -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+
+            &__box {
+
+                &-caption {
+                    bottom: 4rem;
+                    right: 17rem;
+                    box-shadow: 0 0 .5rem .5rem $background-color;
+
+                    &--1 {
+                        &::after {
+                            display: none;
+                        }
+                    }
+
+                    &--2 {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
