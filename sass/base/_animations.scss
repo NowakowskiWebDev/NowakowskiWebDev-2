@@ -20,12 +20,12 @@
     }
 }
 
-@keyframes moveBoutRight {
+@keyframes showStoriesHeading {
     0% {
-        left: 10%;
+        opacity: 0;
     }
 
     100% {
-        left: 50%
+        opacity: 1;
     }
 }

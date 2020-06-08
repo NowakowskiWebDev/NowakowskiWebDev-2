@@ -4,9 +4,13 @@
 }
 
 .dream-night {
+    .grid {
+        display: none;
+    }
+
     -webkit-clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
     clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
-    background: url(../img/background-video-640.png);
+    background: url(../img/background-on-video-640.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

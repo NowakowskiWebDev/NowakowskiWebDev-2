@@ -17,10 +17,6 @@
         border-radius: 1rem 1rem 0 0;
         font-weight: 700;
 
-        // @media screen and (orientation: landscape) and (max-width: 599px) {
-        //     padding: 1rem 1rem 6rem;
-        // }
-
         &--1 {
             background-color: #919499;
             background-image: url(../img/overlay.png);
@@ -36,6 +32,10 @@
             background-image: url(../img/overlay.png);
 
         }
+
+        @include respond (tab-land) {
+            padding: 1rem 1rem 3.5rem;
+        }
     }
 
     &__shadow {
@@ -50,5 +50,8 @@
         transform: translate(-50%, 0);
         box-shadow: 8px -3px 15px black, -8px -3px 15px black;
 
+        @include respond(tab-land) {
+            width: 68%;
+        }
     }
 }

@@ -1,7 +1,7 @@
-// VIEW 600PX
+// VIEW 600PX+
 @include respond(tab-port) {
 
-    // HEADER FOR 600PX
+    // HEADER FOR 600PX+
     .header {
         &__h1 {
             font-size: 6rem;
@@ -17,7 +17,7 @@
         }
     }
 
-    // STORIES FOR 600PX
+    // STORIES FOR 600PX+
     .stories {
         padding: 3rem 4rem 2rem;
         line-height: 1.6;
@@ -92,7 +92,7 @@
         }
     }
 
-    // TOURS FOR 600PX
+    // TOURS FOR 600PX+
     .tours {
         padding: 0 4rem 1rem;
 
@@ -104,11 +104,15 @@
         &__lists {
             width: 50%;
         }
-
     }
 
-    // DREAM-NIGHT FOR 600PX
+    // DREAM-NIGHT FOR 600PX+
     .dream-night {
+        background: url(../img/background-on-video-1280.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
 
         &__heading {
             font-size: 2.5rem;
@@ -119,8 +123,13 @@
         }
     }
 
-    // CONTACT FOR 600PX
+    // CONTACT FOR 600PX+
     .contact {
+        background: url(../img/background-contact-1280.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
         &__heading {
             padding: .5rem;
             font-size: 3.5rem;
@@ -132,38 +141,224 @@
         }
     }
 
-    // FOOTER FOR 600PX
+    // FOOTER FOR 600PX+
     .footer {
-        border-top: $color-grey 2px solid;
-        padding: 2rem 2rem 1rem;
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
+        max-width: 30%;
 
         &__icons {
-            margin-bottom: 4rem;
-            width: 100%;
+            justify-content: space-around;
+            // align-items: ;
+            max-width: 100%;
+        }
+    }
+}
+
+// VIEW 900PX+
+@include respond(tab-land) {
+
+    // HEADER FOR 900PX
+    .header {
+        height: 85vh;
+    }
+
+    // STORIES FOR 900PX
+    .stories {
+        padding: 3rem 4rem 2rem;
+        line-height: 1.6;
+
+        &__heading {
+            font-size: 4.5rem;
+            opacity: 0;
+            animation: showStoriesHeading 2s ease-out 1.5s forwards;
+        }
+
+        .story {
+            position: relative;
+            margin: 4rem 0;
+            padding: 3rem 5rem 4rem;
+
+
+            &__tertiary {
+                font-size: 2.2rem;
+                width: 100%;
+            }
+
+            &__container {
+                display: flex;
+            }
+
+            &__box {
+                height: 100%;
+
+                &-img {
+                    display: block;
+                    height: 100%;
+                    width: 30rem;
+                    object-fit: cover;
+                }
+
+                &-caption {
+                    display: block;
+                    position: absolute;
+                    bottom: 2rem;
+                    right: 4rem;
+                    background-color: $color-white;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    box-shadow: $box-shadow-base;
+                    font-family: 'PermanentMarker';
+
+                    &--1 {
+                        &::after {
+                            content: '';
+                            display: inline-block;
+                            position: absolute;
+                            top: -50%;
+                            left: -20%;
+                            background-color: $color-white;
+                            height: 83%;
+                            width: 112%;
+                            z-index: 15;
+                        }
+                    }
+
+                    &--2 {
+                        &::after {
+                            content: '';
+                            display: inline-block;
+                            position: absolute;
+                            top: -50%;
+                            left: -20%;
+                            background-color: $color-white;
+                            height: 82%;
+                            width: 113%;
+                            z-index: 15;
+                        }
+                    }
+                }
+            }
+
+            &__text {
+                padding: 2rem 2rem 3.7rem;
+                border-radius: 0 10px 10px 0;
+                box-shadow: none;
+            }
+        }
+    }
+
+    // TOURS FOR 900PX
+    .tours {
+        padding: 0 0 1rem;
+
+        .container {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: space-around;
         }
 
-        &__link {
-            display: inline-block
+        &__box {
+            width: 33.33%;
+
+            &--1 {
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            &--2 {
+                order: 2;
+
+                &::before {
+                    display: none;
+                }
+            }
+
         }
 
-        &__icon {
-            font-size: 4rem;
-            color: $color-grey;
-            cursor: pointer;
+    }
+
+    // DREAM-NIGHT FOR 900PX AND GALLERY DISPLAY:BLOCK
+    .container-flex--dream-night {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #333;
+    }
+
+    .dream-night {
+        margin: 5rem 0;
+        font-size: 3rem;
+
+        &__text {
+            font-size: 2.2rem;
         }
 
-        &__paragraph {
-            font-size: 1.8rem;
-            color: $color-white;
+
+        .grid {
+            height: 100%;
+            width: 100%;
+            display: block;
+            background-color: white;
+
+            &__pictures-box {
+                height: 100%;
+                width: 100%;
+                background-color: $color-white;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 9vw);
+                grid-gap: .5rem;
+                padding: .5rem;
+                grid-gap: 10;
+                grid-auto-rows: auto;
+                grid-auto-columns: auto;
+            }
+
+            &-picture {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+
+            }
+
+            // MOUNTAINS
+            &-picture--mountains {
+                grid-row: 1 / span 2;
+                grid-column: 2 / span 2;
+            }
+
+            // CAMERA
+            &-picture--camera {
+                grid-row: 1 / span 1;
+                grid-column: 1 / span 1;
+            }
+
+            // CAR
+            &-picture--car {
+                grid-row: 2 / span 2;
+                grid-column: 1 / span 2;
+            }
+
+            // GRANDPARENTS
+            &-picture--grandparents {
+                grid-row: 3;
+                grid-column: 3;
+            }
+
+
+        }
+
+    }
+
+    // FOOTER FOR 900PX
+    .footer {
+        max-width: 300px;
+
+        &__icons {
+            justify-content: space-around;
+            // align-items: ;
+            max-width: 100%;
         }
     }
 }
