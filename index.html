@@ -112,7 +112,9 @@
                 <h3 class="dream-night__heading">Niezapomniane widoki i wrażenia!</h3>
                 <div class="dream-night__video video">
                     <video class="video__content" autoplay muted loop>
-                        <source src="img/Milky-way--540.mp4" type="video/mp4">
+                        <source src="img/Milky-way--540.mp4" type="video/mp4" media="all and (max-width: 599px)">
+                        <source src="img/Milky-way-1080.mp4" type="video/mp4" media="all and (max-width: 889px)">
+                        <source src="img/Milky-way--1620.mp4" type="video/mp4">
                         Twoja przeglądarka nie jest wspierana!
                     </video>
                 </div>
@@ -147,9 +149,9 @@
                 </form>
                 <footer class="footer">
                     <div class="footer__icons">
-                        <a href="#" class="footer__link"><i class="fab fa-facebook-square footer__icon"></i></a>
-                        <a href="#" class="footer__link"><i class="fab fa-instagram-square footer__icon"></i></a>
-                        <a href="#" class="footer__link"><i class="fab fa-twitter-square footer__icon"></i></a>
+                        <a href="#" class="footer__link"><i class="fab fa-facebook-square footer__icon footer__icon--facebook"></i></a>
+                        <a href="#" class="footer__link"><i class="fab fa-instagram-square footer__icon footer__icon--instagram"></i></a>
+                        <a href="#" class="footer__link"><i class="fab fa-twitter-square footer__icon footer__icon--twitter"></i></a>
                     </div>
                     <p class="footer__paragraph">&copy; Eskapady</p>
                 </footer>

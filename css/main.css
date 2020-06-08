@@ -188,13 +188,6 @@ h3 {
   border: #333 2px solid;
 }
 
-.form__btn {
-  display: block;
-  border-radius: 5px;
-  padding: 1rem 2rem;
-  margin: 1rem auto 3rem;
-}
-
 .shadow-box {
   position: relative;
   top: 0;
@@ -388,6 +381,7 @@ h3 {
   text-align: center;
   width: 100%;
   position: relative;
+  padding-bottom: 0 0 1rem;
 }
 
 .tours__heading {
@@ -473,7 +467,7 @@ h3 {
 
 .tours__lists-item {
   background-color: rgba(255, 255, 255, 0.8);
-  margin: 0rem auto;
+  margin: 1rem auto 0;
   padding-bottom: 1rem;
   width: 70%;
 }
@@ -496,7 +490,7 @@ h3 {
   background-repeat: no-repeat;
   text-align: center;
   font-size: 1.6rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
   color: #333;
 }
 
@@ -517,7 +511,7 @@ h3 {
 
 .contact {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
   background: url(../img/background-contact-640.jpg);
   background-position: center;
   background-size: cover;
@@ -556,6 +550,18 @@ h3 {
   padding: 4rem 2rem;
   font-weight: 700;
   max-width: 40rem;
+}
+
+.contact .form__btn {
+  display: block;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 1rem auto 3rem;
+}
+
+.contact .form__btn:hover {
+  -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .footer {
@@ -599,6 +605,18 @@ h3 {
   font-size: 4rem;
   color: #333;
   cursor: pointer;
+}
+
+.footer__icon--facebook:hover {
+  color: #4267B2;
+}
+
+.footer__icon--instagram:hover {
+  color: #4267B2;
+}
+
+.footer__icon--twitter:hover {
+  color: #4267B2;
 }
 
 .footer__paragraph {
@@ -675,10 +693,73 @@ h3 {
   }
   .stories .story__text {
     padding: 2rem 2rem 3.7rem;
-    background-color: #fff;
-    -webkit-box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+  }
+  .tours {
+    padding: 0 4rem 1rem;
+  }
+  .tours__heading {
+    font-size: 4.5rem;
+    padding: 1rem 2rem 6rem;
+  }
+  .tours__lists {
+    width: 50%;
+  }
+  .dream-night__heading {
+    font-size: 2.5rem;
+  }
+  .dream-night__text {
+    font-size: 1.8rem;
+  }
+  .contact__heading {
+    padding: .5rem;
+    font-size: 3.5rem;
+  }
+  .contact__text {
+    max-width: 60rem;
+    margin-left: 10rem;
+  }
+  .footer {
+    border-top: #333 2px solid;
+    padding: 2rem 2rem 1rem;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__icons {
+    margin-bottom: 4rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__link {
+    display: inline-block;
+  }
+  .footer__icon {
+    font-size: 4rem;
+    color: #333;
+    cursor: pointer;
+  }
+  .footer__paragraph {
+    font-size: 1.8rem;
+    color: #fff;
   }
 }
 /*# sourceMappingURL=main.css.map */

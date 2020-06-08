@@ -3,6 +3,7 @@
     text-align: center;
     width: 100%;
     position: relative;
+    padding-bottom: 0 0 1rem;
 
 
     &__heading {
@@ -90,7 +91,7 @@
 
         &-item {
             background-color: rgba($color-white, .8);
-            margin: 0rem auto;
+            margin: 1rem auto 0;
             padding-bottom: 1rem;
             width: 70%;
 

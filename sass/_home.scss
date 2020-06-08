@@ -19,28 +19,18 @@
 
     // STORIES FOR 600PX
     .stories {
-        // height: min-content;
         padding: 3rem 4rem 2rem;
-        // text-align: center;
-        // font-size: $deafult-font-size;
         line-height: 1.6;
 
         &__heading {
-            // margin-bottom: 1rem;
             font-size: 4.5rem;
-            // font-family: 'Caveat';
         }
 
         .story {
             position: relative;
-            // &>* {
-            //     margin-bottom: 1rem;
-            // }
 
-            // overflow: hidden;
             margin: 4rem 0;
             padding: 3rem 5rem 4rem;
-            // background: linear-gradient(20deg, $background-color 30%, #edf2a8);
 
             &__tertiary {
                 font-size: 2.2rem;
@@ -63,9 +53,6 @@
                     padding: 1rem;
                     border-radius: 10px;
                     box-shadow: $box-shadow-base;
-                    // font-family: 'Lato-Regular';
-                    // font-family: 'Lato-Bold';
-                    // font-family: 'Caveat';
                     font-family: 'PermanentMarker';
 
                     &--1 {
@@ -101,11 +88,82 @@
 
             &__text {
                 padding: 2rem 2rem 3.7rem;
-                background-color: $color-white;
-                box-shadow: $box-shadow-base;
-                border-radius: 10px;
-
             }
+        }
+    }
+
+    // TOURS FOR 600PX
+    .tours {
+        padding: 0 4rem 1rem;
+
+        &__heading {
+            font-size: 4.5rem;
+            padding: 1rem 2rem 6rem;
+        }
+
+        &__lists {
+            width: 50%;
+        }
+
+    }
+
+    // DREAM-NIGHT FOR 600PX
+    .dream-night {
+
+        &__heading {
+            font-size: 2.5rem;
+        }
+
+        &__text {
+            font-size: 1.8rem;
+        }
+    }
+
+    // CONTACT FOR 600PX
+    .contact {
+        &__heading {
+            padding: .5rem;
+            font-size: 3.5rem;
+        }
+
+        &__text {
+            max-width: 60rem;
+            margin-left: 10rem;
+        }
+    }
+
+    // FOOTER FOR 600PX
+    .footer {
+        border-top: $color-grey 2px solid;
+        padding: 2rem 2rem 1rem;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        &__icons {
+            margin-bottom: 4rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__link {
+            display: inline-block
+        }
+
+        &__icon {
+            font-size: 4rem;
+            color: $color-grey;
+            cursor: pointer;
+        }
+
+        &__paragraph {
+            font-size: 1.8rem;
+            color: $color-white;
         }
     }
 }

@@ -17,13 +17,31 @@
     }
 
     &__link {
-        display: inline-block
+        display: inline-block;
     }
 
     &__icon {
         font-size: 4rem;
         color: $color-grey;
         cursor: pointer;
+
+        &--facebook {
+            &:hover {
+                color: #4267B2;
+            }
+        }
+
+        &--instagram {
+            &:hover {
+                color: #4267B2;
+            }
+        }
+
+        &--twitter {
+            &:hover {
+                color: #4267B2;
+            }
+        }
     }
 
     &__paragraph {
